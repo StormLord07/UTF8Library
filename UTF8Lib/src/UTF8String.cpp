@@ -1,3 +1,9 @@
+/*
+ * Created by Ilya 'StormLord07' Repnev
+ * Created on Sun Jul 30 2023
+ */
+
+
 #include "UTF8String.h"
 
 namespace UTF8Lib {
