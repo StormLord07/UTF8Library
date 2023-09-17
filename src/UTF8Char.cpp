@@ -5,21 +5,18 @@
 
 
 #include "UTF8Char.h"
-#include <iostream>
 namespace UTF8Lib {
-
 
     UTF8Char::UTF8Char(const std::string &str) {
         length = getCharLength(str[0]);
-        std::cout << length << "\n" << std::endl;
-        for (int i = 0; i < length; i++) {
+        for (size_t i = 0; i < length; i++) {
             data[i] = static_cast<unsigned char>(str[i]);
         }
     }
 
     UTF8Char::UTF8Char(const std::string &str, size_t len) : length(len) {
 
-        for (int i = 0; i < length; i++) {
+        for (size_t i = 0; i < length; i++) {
             data[i] = static_cast<unsigned char>(str[i]);
         }
     }
